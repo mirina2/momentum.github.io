@@ -16,7 +16,7 @@
             image.classList.add('bgImage');
             if(chgH>= 6 && chgH<12){
                 body.appendChild(image);
-                image.src = `bg/morning.png`;
+                image.src = `morning.png`;
                 body.style.color="black";
                 while(a < lig){
                     btnId.style.color ="black";
@@ -26,7 +26,7 @@
             }else
                 if(chgH>=12 && chgH<20){
                     body.appendChild(image);  
-                    image.src = `bg/afternoon.png`;
+                    image.src = `afternoon.png`;
                     body.style.color="black";
                     while(btnst < lig){
                         console.log(a);
@@ -36,7 +36,7 @@
                 }else
                     if(chgH>= 20 || chgH<6){
                         body.appendChild(image);
-                        image.src = `bg/night.png`;
+                        image.src = `night.png`;
                         body.style.color="white";
                         while(btnst < lig){
                             var btnsy = btns.getElementsById(btnst);
