@@ -90,3 +90,21 @@ h4{
 .js_input::-webkit-input-placeholder{
     text-align:center;
 }
+.morning_ph::-webkit-input-placeholder{
+    color:white;
+}
+.afternoom_ph::-webkit-input-placeholder{
+    color:black;
+}
+.night_ph::-webkit-input-placeholder{
+    color:white;
+}
+.morning_todo_ph::-webkit-input-placeholder{
+    color:white;
+}
+.afternoom_todo_ph::-webkit-input-placeholder{
+    color:black;
+}
+.night_todo_ph::-webkit-input-placeholder{
+    color:white;
+}
