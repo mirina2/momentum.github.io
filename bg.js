@@ -18,7 +18,7 @@
             image.classList.add('bgImage');
             if(chgH>= 6 && chgH<12){
                 body.appendChild(image);
-                image.src = `bg/morning.png`;
+                image.src = `morning.png`;
                 body.style.color="black";
                 nameplace.classList.add('morning_ph');
                 todoplace.classList.add('morning_todo_ph');
@@ -30,7 +30,7 @@
             }else
             if(chgH>=12 && chgH<20){
                 body.appendChild(image);  
-                image.src = `bg/afternoon.png`;
+                image.src = `afternoon.png`;
                 body.style.color="black";
                 nameplace.classList.add('afternoon_ph');
                 todoplace.classList.add('afternoon_todo_ph');
@@ -42,7 +42,7 @@
                 }else
                     if(chgH>= 20 || chgH<6){
                         body.appendChild(image);
-                        image.src = `bg/night.png`;
+                        image.src = `night.png`;
                         body.style.color="white";
                 nameplace.classList.add('night_ph');
                 todoplace.classList.add('night_todo_ph');
