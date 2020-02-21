@@ -1,6 +1,8 @@
     var body = document.querySelector("body");
     var btns = document.querySelector(".Dbutton");
     var qli = document.querySelector("li");
+    var nameplace = document.querySelector(".js_input");
+    var todoplace = document.querySelector(".t_input")
     var lig = qli.length+ 1;
     var a = 0;
     var btnst = JSON.parse(document.querySelector("button").getAttribute("id"));
@@ -16,18 +18,22 @@
             image.classList.add('bgImage');
             if(chgH>= 6 && chgH<12){
                 body.appendChild(image);
-                image.src = `morning.png`;
+                image.src = `bg/morning.png`;
                 body.style.color="black";
+                nameplace.classList.add('morning_ph');
+                todoplace.classList.add('morning_todo_ph');
                 while(a < lig){
                     btnId.style.color ="black";
                     console.log(a);
                     a = a+1;
                 }
             }else
-                if(chgH>=12 && chgH<20){
-                    body.appendChild(image);  
-                    image.src = `afternoon.png`;
-                    body.style.color="black";
+            if(chgH>=12 && chgH<20){
+                body.appendChild(image);  
+                image.src = `bg/afternoon.png`;
+                body.style.color="black";
+                nameplace.classList.add('afternoon_ph');
+                todoplace.classList.add('afternoon_todo_ph');
                     while(btnst < lig){
                         console.log(a);
                         a = a+1;
@@ -36,8 +42,10 @@
                 }else
                     if(chgH>= 20 || chgH<6){
                         body.appendChild(image);
-                        image.src = `night.png`;
+                        image.src = `bg/night.png`;
                         body.style.color="white";
+                nameplace.classList.add('night_ph');
+                todoplace.classList.add('night_todo_ph');
                         while(btnst < lig){
                             var btnsy = btns.getElementsById(btnst);
                             console.log(btnsy);
