@@ -34,6 +34,8 @@ getWeather(user_lat, user_long, user_humit);
 
 function handleGeoError(){
     alert("Can't access geo loaction!");
+    var error_div = document.querySelector(".weather_style");
+    error_div.style.overflow-hidden;
 }
 function askForCoords(){
 navigator.geolocation.getCurrentPosition(handleGeoSuccess, handleGeoError)
