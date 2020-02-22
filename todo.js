@@ -38,6 +38,24 @@ function paintToDo(text){
                 delBtn.innerText="☑";
                     delBtn.style.color="white";
                     }
+        delBtn.classList.add("Dbutton");
+    delBtn.addEventListener("click", delToDos);
+    const span = document.createElement("span");
+    const newID = toDos.length + 1 ; 
+    
+    span.innerText= text;
+    li.appendChild(span);
+    li.appendChild(delBtn);
+    li.id = newID;
+    delBtn.id = JSON.parse(newID);
+    tlist.appendChild(li);
+    const tObj = {
+        text: text,
+        id: newID
+    };
+    toDos.push(tObj);
+    saveToDos();
+}
 
 function handleSubmit(event) {
     event.preventDefault();
