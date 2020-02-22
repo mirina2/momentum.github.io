@@ -24,25 +24,20 @@ function saveToDos(){
 function paintToDo(text){
     const li = document.createElement("li");
     const delBtn = document.createElement("button");
-    delBtn.innerText="☑";
-    delBtn.classList.add("Dbutton");
-    delBtn.addEventListener("click", delToDos);
-    const span = document.createElement("span");
-    const newID = toDos.length + 1 ; 
-    
-    span.innerText= text;
-    li.appendChild(span);
-    li.appendChild(delBtn);
-    li.id = newID;
-    delBtn.id = JSON.parse(newID);
-    tlist.appendChild(li);
-    const tObj = {
-        text: text,
-        id: newID
-    };
-    toDos.push(tObj);
-    saveToDos();
-}
+    dat2 = new Date();
+    var chgH = dat2.getHours();
+        if(chgH>= 6 && chgH<12){
+            delBtn.innerText="☑";
+            delBtn.style.color="black"
+        }else
+            if(chgH>=12 && chgH<20){
+            delBtn.innerText="☑";
+            delBtn.style.color="black";
+            }else
+                    if(chgH>= 20 || chgH<6){
+                delBtn.innerText="☑";
+                    delBtn.style.color="white";
+                    }
 
 function handleSubmit(event) {
     event.preventDefault();
