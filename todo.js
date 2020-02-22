@@ -29,11 +29,11 @@ function paintToDo(text){
         if(chgH>= 6 && chgH<12){
             delBtn.innerText="☑";
             delBtn.style.color="black"
-        }else
+        }
             if(chgH>=12 && chgH<20){
             delBtn.innerText="☑";
             delBtn.style.color="black";
-            }else
+            }
                     if(chgH>= 20 || chgH<6){
                 delBtn.innerText="☑";
                     delBtn.style.color="white";
